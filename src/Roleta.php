@@ -15,8 +15,10 @@ class Roleta
 
 		if ($n === 5) 
 		{
+    		if ($k === 3) return 5;
 			return 4;
 		}
+
 
 		return $k;
 	}

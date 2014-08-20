@@ -60,4 +60,9 @@ class RoletaTest extends \PHPUnit_Framework_TestCase
 		$this->assertEquals(1, (new Roleta)->sobrevivente(5, 2, 3));
 	}
 
+	public function testCincoTresQuatroSobreviveTres()
+	{
+		$this->assertEquals(3, (new Roleta)->sobrevivente(5, 3, 4));
+	}
+
 }
