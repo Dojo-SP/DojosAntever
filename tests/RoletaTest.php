@@ -20,15 +20,32 @@ class RoletaTest extends \PHPUnit_Framework_TestCase
 	}
 	
 
-	public function testDoisDoisUm()
+	public function testDoisDoisUmSobreviveDois()
 	{
 		$this->assertEquals(2, (new Roleta)->sobrevivente(2, 2, 1));
 
 	}
 
-	public function testDoisUmUm()
+	public function testDoisUmUmSobreviveUm()
 	{
 		$this->assertEquals(1, (new Roleta)->sobrevivente(2, 1, 1));
 
+	}
+
+	public function testTresUmUmSobreviveUm()
+	{
+		$this->assertEquals(1, (new Roleta)->sobrevivente(3, 1, 1));
+
+	}
+
+	public function testTresDoisUmSobreviveUm()
+	{
+		$this->assertEquals(1, (new Roleta)->sobrevivente(3, 2, 1));
+
+	}
+
+	public function testTresUmDoisSobreviveDois()
+	{
+		$this->assertEquals(2, (new Roleta)->sobrevivente(3, 1, 2));
 	}
 }
