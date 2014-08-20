@@ -16,7 +16,15 @@ class RoletaTest extends \PHPUnit_Framework_TestCase
 
 	public function testUmaPessoaNinguemMorre()
 	{
-		$this->assertEquals(1, (new Roleta(1, 1, 1))->sobrevivente());
+		$this->assertEquals(1, (new Roleta)->sobrevivente(1, 1, 1));
 	}
 	
+
+	public function testDoisDoisUm()
+	{
+		$this->assertEquals(2, (new Roleta)->sobrevivente(2, 2, 1));
+
+	}
+
+
 }

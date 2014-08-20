@@ -2,7 +2,8 @@
 
 class Roleta
 {
-	public function sobrevivente() {
-		return 1;
+	public function sobrevivente($n, $k, $i)
+	{
+		return $n;
 	}
 }
