@@ -26,5 +26,9 @@ class RoletaTest extends \PHPUnit_Framework_TestCase
 
 	}
 
+	public function testDoisUmUm()
+	{
+		$this->assertEquals(1, (new Roleta)->sobrevivente(2, 1, 1));
 
+	}
 }
